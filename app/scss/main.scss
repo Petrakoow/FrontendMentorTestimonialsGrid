@@ -1,16 +1,19 @@
-@import 'abstracts/variables';
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
-@import 'base/reset';
-@import 'base/typography';
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "base/reset";
+@import "base/typography";
 
 //Root
-@import 'base/root';
+@import "base/root";
 
 //Components
-@import 'components/background-preview';
-@import 'components/description-preview';
-@import 'components/profile-preview';
+@import "components/background-preview";
+@import "components/description-preview";
+@import "components/profile-preview";
 
 //Pages
-@import 'pages/testimonials-section';
+@import "pages/testimonials-section";
+
+//Layout
+@import "layout/footer.scss";
