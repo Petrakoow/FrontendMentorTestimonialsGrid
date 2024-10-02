@@ -1,0 +1,35 @@
+.background-preview {
+    border-radius: 10px;
+    position: relative;
+    &--bg {
+        &-purple {
+            background-color: $moderate-violet;
+        }
+        &-very-dark-gray {
+            background-color: $very-dark-grayish-blue;
+        }
+        &-very-dark-blue {
+            background-color: $very-dark-blackish-blue;
+        }
+        &-white {
+            background-color: $white;
+        }
+    }
+
+    &--shadow {
+        box-shadow: 45px 46px 90px -75px hsl(217, 19%, 35%);
+    }
+
+    &--quotation {
+        &::before {
+            content: "";
+            background-image: url("/assets/images/bg-pattern-quotation.svg");
+            top: 0;
+            right: clamp(24px, calc((100vw - 375px) * 0.5), 80px);
+            width: 104px;
+            height: 102px;
+            position: absolute;
+            z-index: 0;
+        }
+    }
+}

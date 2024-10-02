@@ -1,0 +1,46 @@
+.profile-preview {
+    display: flex;
+    align-items: center;
+    &__wrapper {
+        position: relative;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        overflow: hidden;
+        &--b-white {
+            border: 2px solid rgba($white, 0.5);
+        }
+        &--b-purple {
+            border: 2px solid rgba($moderate-violet, 0.5);
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    &__description {
+        margin-left: 16px;
+    }
+
+    &__name {
+        font-size: px-to-rem(14px);
+    }
+
+    &__status {
+        opacity: $opacity-50;
+        font-size: px-to-rem(12px);
+    }
+
+    &__name,
+    &__status {
+        &--dark-mode {
+            color: $very-dark-grayish-blue;
+        }
+        &--white-mode {
+            color: $white;
+        }
+        position: relative;
+    }
+}

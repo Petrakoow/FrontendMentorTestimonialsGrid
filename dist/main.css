@@ -1,0 +1,292 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  font-weight: 500;
+  src: url("/assets/fonts/BarlowSemiCondensed-Medium.woff2");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  font-weight: 600;
+  src: url("/assets/fonts/BarlowSemiCondensed-SemiBold.woff2");
+  font-display: swap;
+  font-style: normal;
+}
+html {
+  font-size: 13px;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  line-height: 1.3;
+}
+
+.background-preview {
+  border-radius: 10px;
+  position: relative;
+}
+.background-preview--bg-purple {
+  background-color: hsl(263, 55%, 52%);
+}
+.background-preview--bg-very-dark-gray {
+  background-color: hsl(217, 19%, 35%);
+}
+.background-preview--bg-very-dark-blue {
+  background-color: hsl(219, 29%, 14%);
+}
+.background-preview--bg-white {
+  background-color: hsl(0, 0%, 100%);
+}
+.background-preview--shadow {
+  -webkit-box-shadow: 45px 46px 90px -75px hsl(217, 19%, 35%);
+          box-shadow: 45px 46px 90px -75px hsl(217, 19%, 35%);
+}
+.background-preview--quotation::before {
+  content: "";
+  background-image: url("/assets/images/bg-pattern-quotation.svg");
+  top: 0;
+  right: clamp(24px, (100vw - 375px) * 0.5, 80px);
+  width: 104px;
+  height: 102px;
+  position: absolute;
+  z-index: 0;
+}
+
+.description-preview {
+  position: relative;
+  z-index: 1;
+}
+.description-preview__header {
+  font-size: 1.5461538462rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.description-preview__annotation {
+  opacity: 70%;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 500;
+  -webkit-hyphens: manual;
+      -ms-hyphens: manual;
+          hyphens: manual;
+}
+.description-preview__header--white-mode, .description-preview__annotation--white-mode {
+  color: hsl(0, 0%, 100%);
+}
+.description-preview__header--dark-mode, .description-preview__annotation--dark-mode {
+  color: hsl(217, 19%, 35%);
+}
+
+.profile-preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.profile-preview__wrapper {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile-preview__wrapper--b-white {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+.profile-preview__wrapper--b-purple {
+  border: 2px solid rgba(117, 65, 200, 0.5);
+}
+.profile-preview__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.profile-preview__description {
+  margin-left: 16px;
+}
+.profile-preview__name {
+  font-size: 1.0769230769rem;
+}
+.profile-preview__status {
+  opacity: 50%;
+  font-size: 0.9230769231rem;
+}
+.profile-preview__name, .profile-preview__status {
+  position: relative;
+}
+.profile-preview__name--dark-mode, .profile-preview__status--dark-mode {
+  color: hsl(217, 19%, 35%);
+}
+.profile-preview__name--white-mode, .profile-preview__status--white-mode {
+  color: hsl(0, 0%, 100%);
+}
+
+.body {
+  background-color: hsl(210, 46%, 95%);
+}
+.body__wrapper {
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.content {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.content__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 1158px;
+  padding: 70px 24px;
+  margin: 0 auto;
+}
+.content__footer {
+  padding: 10px;
+}
+
+.testimonials {
+  display: grid;
+}
+@media screen and (max-width: 767.98px) {
+  .testimonials {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .testimonials {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+  .testimonials > :nth-child(1) {
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+  .testimonials > :nth-child(2) {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+  .testimonials > :nth-child(3) {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .testimonials > :nth-child(4) {
+    grid-row: 2/3;
+    grid-column: 2/4;
+  }
+  .testimonials > :nth-child(5) {
+    grid-row: 3/4;
+    grid-column: 1/4;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .testimonials {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+  }
+  .testimonials > :nth-child(1) {
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+  .testimonials > :nth-child(2) {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+  .testimonials > :nth-child(3) {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .testimonials > :nth-child(4) {
+    grid-row: 2/3;
+    grid-column: 2/4;
+  }
+  .testimonials > :nth-child(5) {
+    grid-row: 1/3;
+    grid-column: 4/5;
+  }
+}
+.testimonials__background-preview {
+  padding: 24px 32px 30px;
+}
+.testimonials__profile-preview {
+  margin-bottom: 14px;
+}/*# sourceMappingURL=main.css.map */

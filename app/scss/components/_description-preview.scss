@@ -1,0 +1,26 @@
+.description-preview {
+    position: relative;
+    z-index: 1;
+    &__header {
+        font-size: px-to-rem(20.1px);
+        font-weight: 500;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+    &__annotation {
+        opacity: $opacity-70;
+        line-height: 1.5;
+        font-size: px-to-rem(13px);
+        font-weight: 500;
+        hyphens: manual;
+    }
+    &__header,
+    &__annotation {
+        &--white-mode {
+            color: $white;
+        }
+        &--dark-mode {
+            color: $very-dark-grayish-blue;
+        }
+    }
+}
