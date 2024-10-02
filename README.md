@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 -   Solution: [solution](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7)
--   Live Site: [github page](https://your-live-site-url.com)
+-   Live Site: [github page](https://petrakoow.github.io/FrontendMentorTestimonialsGrid/)
 
 ## My process
 
